@@ -1,4 +1,5 @@
 import { Post } from "../../components/post";
+import Link from 'next/link';
 
 async function getBlogPosts() {
   const postsResponse = await fetch(
@@ -19,6 +20,9 @@ export default async function Page() {
 
   return (
     <div className="flex flex-col items-center pt-10">
+       <Link href="/blogs">
+                            Blogs
+                        </Link>
       <h1 className="text-4xl font-bold">Blog</h1>
       <div className="flex flex-wrap h-full max-w-xl">
         {posts.map((post: any) => (
