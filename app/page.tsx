@@ -36,11 +36,9 @@ export default async function Home() {
             <p>Find in-depth information about Next.js 13</p>
           </a>
 
-         <Link href={`/blog`} passHref >
-              <a className={styles.card}>
-              <h2> Blogs </h2>
-              </a>
-            </Link>
+          <Link href="/blog">
+                            Blogs
+                        </Link>
           <a
             href="https://vercel.com/templates/next.js/app-directory?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
             target="_blank"
