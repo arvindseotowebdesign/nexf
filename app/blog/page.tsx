@@ -20,7 +20,7 @@ export default async function Page() {
 
   return (
     <div className="flex flex-col items-center pt-10">
-       <Link href="/blogs">
+       <Link href="/">
                             Blogs
                         </Link>
       <h1 className="text-4xl font-bold">Blog</h1>
