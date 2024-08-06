@@ -1,5 +1,7 @@
 import Image from "next/image";
 import styles from "./page.module.css";
+import Link from "next/link";
+
 
 async function getData() {
   const productsResponse = await fetch(
@@ -34,14 +36,11 @@ export default async function Home() {
             <p>Find in-depth information about Next.js 13</p>
           </a>
 
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className={styles.card}
-          >
-            <h2>Examples &rarr;</h2>
-            <p>Explore the Next.js 13 playground.</p>
-          </a>
-
+         <Link href={`/blog`} passHref >
+              <a className={styles.card}>
+              <h2> Blogs </h2>
+              </a>
+            </Link>
           <a
             href="https://vercel.com/templates/next.js/app-directory?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
             target="_blank"
